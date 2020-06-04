@@ -1,0 +1,9 @@
+name: KuagaV2
+description: For Kuaga animal crematorium
+type: theme
+base theme: classy
+core_version_requirement: 9.x
+version: 1.0.0
+
+regions:
+  content: Content

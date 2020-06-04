@@ -1,0 +1,14 @@
+// //////////////////////////////
+// @@ HEADER 
+// //////////////////////////////
+
+.r-header {
+  padding: 2rem;
+  background-color: map-get($colors, accent);
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
