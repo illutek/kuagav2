@@ -1,0 +1,25 @@
+// /////////////////////////
+// @@ KEEPSAKE REGION
+// ////////////////////////
+
+.r-keepsake {
+    padding: $default-padding;
+    border: 2px solid map-get($colors, accent);
+    text-align: center;
+
+    &__text {
+        margin-bottom: $margin-b;
+    }
+
+    &__images {
+        margin-bottom: $margin-b;
+        display: flex;
+        justify-content: center;
+        img {
+            max-width: 26rem;
+            height: auto;
+        }
+    }
+
+    &__btn {}
+}

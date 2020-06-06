@@ -1,0 +1,13 @@
+// /////////////////////////
+// @@ COMPONENT BUTTONS
+// ////////////////////////
+
+.c-btn {
+
+    padding: 1.5em 3em;
+
+    &--accent-two {
+        background-color: map-get($colors, accent-two);
+
+    }
+}

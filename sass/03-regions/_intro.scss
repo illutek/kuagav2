@@ -19,3 +19,18 @@
         }
     }
 }
+
+.r-second-intro {
+    background-color: map-get($colors, accent);
+    padding: $default-padding;
+    margin-bottom: $margin-b;
+
+    &__images {
+        margin-bottom: $margin-b;
+    }
+
+    &__text {
+        color: map-get($colors, black);
+        text-align: center;
+    }
+}

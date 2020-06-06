@@ -10,7 +10,7 @@
 
     &__panel {
         width: 100%;
-        padding: 1.5rem;
+        padding: $default-padding;
         margin-bottom: $margin-b;
         background-color: map-get($colors, accent);
         text-align: center;
