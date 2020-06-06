@@ -3,39 +3,45 @@
 // ////////////////////////
 
 html {
-    font-family: $ff-sans;
+  font: {
+    family: $ff-sans;
+    weight: $ff-light;
   }
-  
+}
+
 body {
   font-size: $ff-size;
   line-height: 1.5;
 }
-  
-h1, h2 {
+
+h1,
+h2 {
+  line-height: 1;
+  margin-bottom: $margin-b;
   font: {
-    family: 'Italianno', cursive;
-  };
-  
+    family: "Italianno", cursive;
+  }
 }
-  
+
 h1 {
   font: {
-    size: 7.2rem;
+    size: 12vw;
   }
-    
+
+  @include mq(desktop) {
+    font-size: 8vw;
+  }
 }
-  
+
 h2 {
   font: {
-    size: 6.4rem;
-  };
-  
+    size: 11vw;
+  }
 }
-  
+
 h3 {
-  
 }
-  
+
 strong {
   font: {
     weight: bold;
@@ -52,8 +58,7 @@ strong {
   &--light {
     color: map-get($colors, bcg-clr);
     font: {
-      size: 4.8rem;
-    };
-
+      size: 9vw;
+    }
   }
 }

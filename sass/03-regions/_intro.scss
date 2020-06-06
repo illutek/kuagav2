@@ -1,0 +1,21 @@
+// /////////////////////////
+// @@ INTRO REGION
+// ////////////////////////
+
+.r-intro {
+    margin-bottom: $margin-b;
+
+    &__images {
+        margin-bottom: $margin-b;
+    }
+
+    &__text {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        p {
+            max-width: 80rem;
+        }
+    }
+}

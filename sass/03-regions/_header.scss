@@ -5,6 +5,7 @@
 .r-header {
   padding: 2rem;
   background-color: map-get($colors, accent);
+  margin-bottom: $margin-b;
 
   &__top {
     display: flex;
