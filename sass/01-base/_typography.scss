@@ -11,16 +11,25 @@ body {
   line-height: 1.5;
 }
   
-h1, h2, h3, h4 {
+h1, h2 {
+  font: {
+    family: 'Italianno', cursive;
+  };
   
 }
   
 h1 {
+  font: {
+    size: 7.2rem;
+  }
     
 }
   
 h2 {
- 
+  font: {
+    size: 6.4rem;
+  };
+  
 }
   
 h3 {
@@ -30,5 +39,21 @@ h3 {
 strong {
   font: {
     weight: bold;
+  }
+}
+
+.heading-one {
+  color: map-get($colors, accent-two);
+}
+
+.heading-two {
+  color: map-get($colors, accent-two);
+
+  &--light {
+    color: map-get($colors, bcg-clr);
+    font: {
+      size: 4.8rem;
+    };
+
   }
 }
