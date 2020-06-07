@@ -4,10 +4,14 @@
 
 .c-btn {
 
-    padding: 1.5em 3em;
+    padding: 1em 3em;
+    display: inline-block;
+    text-decoration: none;
+
 
     &--accent-two {
         background-color: map-get($colors, accent-two);
+        color: map-get($colors, black);
 
     }
 }

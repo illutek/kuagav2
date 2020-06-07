@@ -23,9 +23,9 @@ $fw-normal: 400;
 $ff-titles: 'Italianno', cursive;
 
 // LAYOUT VARIABLES
-$default-padding: 2.5rem;
+$default-padding: 2em;
 $margin-b: 3rem;
-$margin-bb: 6rem;
+$margin-bb: $margin-b * 2;
 
 // OTHER
 $trans-speed: .3s;
