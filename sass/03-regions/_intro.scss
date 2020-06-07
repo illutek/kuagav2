@@ -3,7 +3,7 @@
 // ////////////////////////
 
 .r-intro {
-    margin-bottom: $margin-b;
+    margin-bottom: $margin-bb;
 
     &__images {
         margin-bottom: $margin-b;
@@ -23,7 +23,7 @@
 .r-second-intro {
     background-color: map-get($colors, accent);
     padding: $default-padding;
-    margin-bottom: $margin-b;
+    margin-bottom: $margin-bb;
 
     &__images {
         margin-bottom: $margin-b;
