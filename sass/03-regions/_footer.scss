@@ -3,28 +3,54 @@
 // //////////////////////////////
 
 .r-footer {
-	background-color: map-get($colors, accent-two);
+  background-color: map-get($colors, accent-two);
 
-	&__inner {
-		padding: $default-padding $double-padding;
-		display: flex;
-		flex-direction: column;
-	}
+  &__inner {
+    padding: $default-padding $double-padding;
+    display: flex;
+    flex-direction: column;
+  }
 
-	&__brochure {
+  &__brochure {
     margin-bottom: $margin-b;
 
-		&-images {
+    &-images {
       max-width: 25rem;
+    }
+  }
+
+  &__opening-hours {
+    margin-bottom: $margin-b;
+  }
+
+  &__contact {
+    margin-bottom: $margin-b;
+
+    &-text {
+      img {
+        max-width: 4.6rem;
+      }
+    }
+  }
+
+  &__partners {
+    &-icons {
+      a {
+				display: inline-block;
+
+        &:not(:last-child) {
+          margin-bottom: $margin-b;
+        }
+      }
+    }
+	}
+	
+	&__copy {
+		display: flex;
+		justify-content: center;
+
+		a {
+			color: map-get($colors, black);
 		}
-	}
-
-	&__opening-hours {
-	}
-
-	&__contact {
-	}
-
-	&__partners {
 	}
 }
