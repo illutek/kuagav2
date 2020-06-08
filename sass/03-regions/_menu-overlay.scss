@@ -1,0 +1,46 @@
+// /////////////////////////
+// @@ MENU-OVELAY REGION
+// ////////////////////////
+
+.r-menu-overlay {
+  // right: -100vw;
+  position: fixed;
+  background-color: map-get($colors, accent-two);
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: $default-padding;
+  overflow: auto;
+  z-index: 999;
+  transition: all 0.9s;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $margin-b;
+  }
+
+  &__list {
+    display: flex;
+    // justify-content: center;
+
+  }
+
+  &__items {
+      list-style-type: none;
+  }
+
+  &__item {
+    font: {
+      size: 2rem;
+      weight: $fw-normal;
+    }
+    text-transform: uppercase;
+    
+  }
+
+  &__link {
+    text-decoration: none;
+    color: map-get($colors, bcg-clr);
+  }
+}
