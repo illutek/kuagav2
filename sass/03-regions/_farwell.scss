@@ -4,6 +4,7 @@
 
 .r-farwell {
   text-align: center;
+  margin-bottom: $margin-bb;
 
   &__panel {
     background-color: rgba(map-get($colors, accent-two), .7);

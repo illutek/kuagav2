@@ -40,6 +40,11 @@ h2 {
 }
 
 h3 {
+  line-height: 1;
+  margin-bottom: $margin-b;
+  font: {
+    size: 5vw;
+  }
 }
 
 strong {
@@ -61,4 +66,8 @@ strong {
       size: 9vw;
     }
   }
+}
+
+.heading-three {
+  color: map-get($colors, bcg-clr);
 }

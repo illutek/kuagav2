@@ -1,0 +1,30 @@
+// //////////////////////////////
+// @@ FOOTER REGION
+// //////////////////////////////
+
+.r-footer {
+	background-color: map-get($colors, accent-two);
+
+	&__inner {
+		padding: $default-padding $double-padding;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__brochure {
+    margin-bottom: $margin-b;
+
+		&-images {
+      max-width: 25rem;
+		}
+	}
+
+	&__opening-hours {
+	}
+
+	&__contact {
+	}
+
+	&__partners {
+	}
+}
