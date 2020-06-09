@@ -1,0 +1,1 @@
+!function(){"use strict";var e=document.querySelector(".c-hamburger-btn"),r=document.querySelector(".js-close-menu"),t=document.querySelector(".r-menu-overlay");document.querySelector(".r-menu-overlay");e.addEventListener("click",function(){t.classList.toggle("r-menu-overlay--visible")}),r.addEventListener("click",function(){t.classList.remove("r-menu-overlay--visible")})}();

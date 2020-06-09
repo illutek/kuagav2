@@ -3,8 +3,9 @@
 // ////////////////////////
 
 .r-menu-overlay {
-  // right: -100vw;
+  right: -100vw;
   position: fixed;
+  opacity: 0;
   background-color: map-get($colors, accent-two);
   top: 0;
   height: 100%;
@@ -20,9 +21,14 @@
     margin-bottom: $margin-b;
   }
 
+  &__close {
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+  }
+
   &__list {
     display: flex;
-    // justify-content: center;
 
   }
 
@@ -32,15 +38,21 @@
 
   &__item {
     font: {
-      size: 2rem;
-      weight: $fw-normal;
+      size: 3rem;
+      weight: $fw-bold;
     }
     text-transform: uppercase;
+    margin-left: 0;
     
   }
 
   &__link {
     text-decoration: none;
     color: map-get($colors, bcg-clr);
+  }
+
+  &--visible {
+    opacity: 1;
+    right: 0;
   }
 }
