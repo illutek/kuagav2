@@ -4,16 +4,9 @@
 
 .r-menu-overlay {
   right: -100vw;
-  position: fixed;
-  opacity: 0;
-  background-color: map-get($colors, accent-two);
-  top: 0;
-  height: 100%;
-  width: 100%;
   padding: $default-padding;
-  overflow: auto;
-  z-index: 999;
-  transition: all 0.9s;
+
+  @include bcg-overlay(map-get($colors, accent-two), map-get($colors, white));
 
   &__top {
     display: flex;

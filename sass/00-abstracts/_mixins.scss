@@ -51,7 +51,7 @@ $breakpoints: (
   padding: 2rem 0;
 }
 
-@mixin bcg-overlay {
+@mixin bcg-overlay($bgc: map-get($colors, accent), $clr: map-get($colors, white)) {
   opacity: 0;
   position: fixed;
   top: 0;
@@ -59,8 +59,8 @@ $breakpoints: (
   width: 100%;
   overflow: auto;
   z-index: 99;
-  color: $white;
-  background: rgba($dark-gray, .95);
+  color: $clr;
+  background: rgba($bgc, 1.0);
   transition: all 0.9s;
 }
 
