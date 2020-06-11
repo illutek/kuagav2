@@ -1,11 +1,15 @@
 // //////////////////////////////
-// @@ HEADER 
+// @@ HEADER
 // //////////////////////////////
 
 .r-header {
   padding: 2rem;
   background-color: map-get($colors, accent);
   margin-bottom: $margin-b;
+
+  @include mq(tablet) {
+    padding: 0;
+  }
 
   &__top {
     display: flex;
@@ -15,7 +19,11 @@
 
   &__primary {
     @include mq(tablet) {
+      display: flex;
 
+      background-image: url(../dist/images/header-bcg.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
     }
   }
   &__logo {
@@ -25,11 +33,14 @@
   &__contact {
     display: none;
     padding: $default-padding;
-    background-color: rgba(map-get($colors, accent-two), .7);
+    background-color: rgba(map-get($colors, accent-two), 0.7);
+    margin-left: 2rem;
+    p {
+      margin-bottom: 0;
+    }
 
     @include mq(tablet) {
       display: block;
     }
   }
-
 }
