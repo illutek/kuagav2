@@ -28,8 +28,8 @@ h1 {
     size: 12vw;
   }
 
-  @include mq(desktop) {
-    font-size: 8vw;
+  @include mq(tablet) {
+    font-size: 7vw;
   }
 }
 

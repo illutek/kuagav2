@@ -8,6 +8,10 @@
 
   @include bcg-overlay(map-get($colors, accent-two), map-get($colors, white));
 
+  @include mq(tablet) {
+    width: 50%;
+  }
+  
   &__top {
     display: flex;
     justify-content: space-between;
