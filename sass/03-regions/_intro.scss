@@ -12,6 +12,9 @@
 
     &__image {
 
+        @include mq(tablet) {
+            max-width: 33%;
+        }
     }
 
     &__image-1, &__image-2 {
