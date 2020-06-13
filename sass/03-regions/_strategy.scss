@@ -23,7 +23,15 @@
     padding: $default-padding;
     margin-bottom: $margin-b;
     background-color: map-get($colors, accent);
+    color: map-get($colors, bcg-clr);
     text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+
+    &:hover {
+      @include card-shadow--hover(accent);
+      transform: scale(1.01);
+    }
 
     @include mq(tablet) {
       width: 40%;

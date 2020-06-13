@@ -64,10 +64,6 @@ $breakpoints: (
   transition: all 0.9s;
 }
 
-@mixin readmore-link-after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 1px;
-  transition: width .3s;
+@mixin card-shadow--hover($clr) {
+  box-shadow: 2px 5.66px 20px 0px rgba(map-get($colors, $clr), 0.2);
 }
