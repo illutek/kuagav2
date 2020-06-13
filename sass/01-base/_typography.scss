@@ -15,7 +15,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   line-height: 1;
   margin-bottom: $margin-b;
   font: {
@@ -35,7 +36,11 @@ h1 {
 
 h2 {
   font: {
-    size: 11vw;
+    size: 5.2em;
+  }
+
+  @include mq(tablet) {
+    // font-size: 5vw;
   }
 }
 
@@ -43,7 +48,11 @@ h3 {
   line-height: 1;
   margin-bottom: $margin-b;
   font: {
-    size: 5vw;
+    size: 3.2em;
+  }
+
+  @include mq(tablet) {
+    // font-size: 4vw;
   }
 }
 
@@ -62,9 +71,6 @@ strong {
 
   &--light {
     color: map-get($colors, bcg-clr);
-    font: {
-      size: 9vw;
-    }
   }
 }
 
