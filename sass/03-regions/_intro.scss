@@ -41,15 +41,30 @@
 
 .r-second-intro {
     background-color: map-get($colors, accent);
-    padding: $default-padding;
+    padding: $double-padding;
     margin-bottom: $margin-bb;
+
+    @include mq(tablet) {
+        display: flex;
+        align-items: center;
+    }
 
     &__images {
         margin-bottom: $margin-b;
+
+        @include mq(tablet) {
+            max-width: 35%;
+            margin-right: 3rem;
+            margin-bottom: 0;
+        }
     }
 
     &__text {
         color: map-get($colors, black);
         text-align: center;
+
+        @include mq(tablet) {
+            width: 65%;
+        }
     }
 }
