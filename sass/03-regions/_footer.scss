@@ -9,7 +9,25 @@
     padding: $default-padding $double-padding;
     display: flex;
     flex-direction: column;
+
+    @include mq(tablet) {
+      padding: $default-padding 0;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      & > div {
+        width: 43%;
+      }
+    }
+
+    @include mq (desktop) {
+      & > div {
+        width: 22%;
+      }
+    }
   }
+
 
   &__brochure {
     margin-bottom: $margin-b;
@@ -47,7 +65,10 @@
 	
 	&__copy {
 		display: flex;
-		justify-content: center;
+    justify-content: center;
+    font: {
+      size: 1.2rem;
+    }
 
 		a {
 			color: map-get($colors, black);
