@@ -3,7 +3,10 @@
 // ////////////////////////
 
 .r-strategy {
-  margin-bottom: $margin-b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: $margin-bb;
 
   &__inner {
     display: flex;
@@ -35,6 +38,9 @@
 
     @include mq(tablet) {
       width: 40%;
+      background-color: map-get($colors, bcg-clr);
+      color: map-get($colors, black);
+      border: 1px solid map-get($colors, black);
 
       &:not(:last-child) {
         margin-right: 1rem;
@@ -43,6 +49,13 @@
 
     @include mq(desktop) {
       width: 24%;
+    }
+  }
+
+  &__title {
+
+    &--accent-two {
+      color: map-get($colors, accent-two);
     }
   }
 }
