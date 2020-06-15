@@ -1,0 +1,35 @@
+// /////////////////////////
+// @@ NEWS REGION
+// ////////////////////////
+
+.r-news {
+  border: 6px solid map-get($colors, accent-two);
+  margin-bottom: $margin-bb;
+
+  &__inner {
+    padding: $default-padding;
+
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+
+  }
+
+  &__text {
+    margin-bottom: $margin-b;
+
+  }
+
+  &__images {
+
+  }
+
+  &__image {
+
+  }
+}
