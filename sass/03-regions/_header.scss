@@ -21,6 +21,7 @@
     @include mq(tablet) {
       display: flex;
       justify-content: space-around;
+      align-items: center;
       position: relative;
       overflow: hidden;
       padding: $default-padding 0;
