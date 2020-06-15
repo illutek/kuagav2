@@ -19,7 +19,12 @@
     align-items: center;
     width: 100%;
 
-    & + #{&} {
+    $this: &;
+
+    // Caching the Current Selector (&)
+    // & + & {} or & + #{&} {} or with var $this: &;
+    // & + #{$this} {}
+    & + #{$this} {
       display: none;
 
       @include mq(tablet) {
