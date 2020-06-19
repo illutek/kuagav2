@@ -1,0 +1,38 @@
+{#
+/**
+ * @file
+ *
+ * header.html.twig
+ * 
+ */
+#}
+
+<header class="r-header">
+    <div class="container">
+      <div class="r-header__top">
+        <div class="c-hamburger-btn">
+          <span class="c-hamburger-btn--open">&nbsp;</span>
+          <span class="c-hamburger-btn__label"> Menu</span>
+        </div>
+        <div class="c-contact-btn js-open-contact">
+          <img src="{{ base_path ~ directory }}/dist/images/contact-btn.png" alt="" />
+        </div>
+      </div>
+      <div class="r-header__primary">
+
+        <a class="r-header__logo-link" href="{{ path('<front>') }}">
+          <img class="r-header__logo" src="{{ base_path ~ directory }}/dist/images/logo.png" alt="Logo Kuaga" />
+        </a>
+        <div class="r-header__contact">
+          <p><strong>Kuaga bvba</strong></p>
+          <p>Maatheide 74/G 3920 Lommel</p>
+          <p>+3211644522 - +32475638869</p>
+          {# A block region #}
+          <p>Openingsuren</p>
+          <p>Maandag tot vrijdag 09h00-12h00 - 13h00-19h00</p>
+          <p>Zaterdag 09h00-15h00</p>
+        </div>
+
+      </div>
+    </div>
+  </header>

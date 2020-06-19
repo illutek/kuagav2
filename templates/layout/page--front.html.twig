@@ -6,15 +6,32 @@
  * @see html.html.twig
  */
 #}
+
 <div class="layout-container">
 
-{# start r-menu-overlay #}
-{% include directory ~ '/templates/partials/shared/menu-overlay.html.twig' %}
-{# r-menu-overlay #}
+    {# start r-menu-overlay #}
+    {% include directory ~ '/templates/partials/shared/menu-overlay.html.twig' %}
+    {# r-menu-overlay #}
 
-{# start r-overlay-contact #}
-{% include directory ~ '/templates/partials/shared/contact-overlay.html.twig' %}
-{# end r-overlay-contact #}
+    {# start r-overlay-contact #}
+    {% include directory ~ '/templates/partials/shared/contact-overlay.html.twig' %}
+    {# end r-overlay-contact #}
+
+    {# start header #}
+    {% include directory ~ '/templates/partials/shared/header.html.twig' %}
+    {# end header #}
+
+    <div class="container">
+
+        {# start region news #}
+        {% include directory ~ '/templates/partials/shared/region-news.html.twig' %}
+        {# end region news #}
+
+        {# start region first intro #}
+        {% include directory ~ '/templates/partials/region-first-intro.html.twig' %}
+        {# end region first intro #}
+
+    </div>
 
 </div>
 {# /.layout-container #}
