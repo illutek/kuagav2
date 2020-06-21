@@ -10,6 +10,14 @@ libraries:
   - kuagav2/java
 
 regions:
+  nav: Navigation
   news: News
   firstintro: "First Intro"
+  strategy: Strategy
+  secondintro: "Second Intro"
+  keepsake: Keepsake
+  farwell: Farwell
   content: Content
+  footerbrochure: "Footer Brochure"
+  footeropening: "Footer openings-hours"
+  footerpartners: "Footer partners"
