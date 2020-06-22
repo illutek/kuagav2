@@ -15,7 +15,7 @@ regions:
   firstintro: "First Intro"
   strategy: Strategy
   secondintro: "Second Intro"
-  keepsake: Keepsake
+  nicekeepsake: "Nice Keepsake"
   farwell: Farwell
   content: Content
   footerbrochure: "Footer Brochure"
