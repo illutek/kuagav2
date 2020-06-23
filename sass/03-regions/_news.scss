@@ -42,7 +42,11 @@
     }
   }
 
-  &__image {
-
+  &__field {
+    display: flex;
+    flex-direction: column;
+    
   }
+
+  &__image {}
 }
