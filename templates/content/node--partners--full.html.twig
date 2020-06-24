@@ -82,10 +82,11 @@
 %}
 {{ attach_library('classy/node') }}
 <article{{attributes.addClass(classes)}}>
-	<h3{{title_attributes.addClass('heading-three')}}>
-		{{ label }}
-	</h3>
+
 	<div{{content_attributes.addClass('node__content')}}>
-		{{ content.body }}
+		<a href="{{ content.field_partners_url.0}}">
+      <img src="{{ file_url(content.field_partner_logo['#items'].entity.uri.value) }}" alt="">
+    </a>
 	</div>
+
 </article>
