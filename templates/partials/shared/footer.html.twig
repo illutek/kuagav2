@@ -22,23 +22,7 @@
 
 			{# opening-hours #}
 			<div class="r-footer__opening-hours">
-				<h3 class="heading-three">Openingsuren</h3>
-				<p>
-					<table>
-						<tr>
-							<td colspan="2">
-								Maandag tot vrijdag</td>
-						</tr>
-						<tr>
-							<td>09h00-12h00</td>
-							<td>13h00-19h00</td>
-						</tr>
-						<tr>
-							<td>Zaterdag</td>
-							<td>09h00-15h00</td>
-						</tr>
-					</table>
-				</p>
+				{{ page.footeropening }}
 			</div>
       {# end opening-hours #}
 
@@ -49,7 +33,7 @@
 					<p>
 						Kuaga bvba<br>Maatheide 74/G 3920 Lommel<br>+3211644522 - +32475638869
 					</p>
-					<a href="#"><img src="../dist/images/facebook-icon.jpg" alt=""></a>
+					<a href="https://www.facebook.com/uitvaartzorgkuaga/"><img src="{{ base_path ~ directory }}/dist/images/facebook-icon.jpg" alt=""></a>
 				</div>
 			</div>
       {# end contact #}

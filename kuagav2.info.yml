@@ -11,6 +11,7 @@ libraries:
 
 regions:
   nav: Navigation
+  headeropening: "Header openings-hours"
   news: News
   firstintro: "First Intro"
   strategy: Strategy
