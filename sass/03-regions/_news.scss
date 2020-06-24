@@ -45,6 +45,13 @@
   &__field {
     display: flex;
     flex-direction: column;
+
+    & .field__item {
+      &:nth-child(2) {
+        margin-top: 2rem;
+      }
+      
+    }
     
   }
 

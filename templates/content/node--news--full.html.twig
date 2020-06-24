@@ -82,27 +82,28 @@
   ]
 %}
 {{ attach_library('classy/node') }}
-<article{{ attributes.addClass(classes) }}>
+<article{{attributes.addClass(classes)}}>
 
-    <div class="r-news__inner">
-    
-        <h2{{ title_attributes.addClass('r-news__title') }}>
-            {{ label }}
-        </h2>
-        <div class="r-news__content">
+	<div class="r-news__inner">
 
-            <div{{ content_attributes.addClass('r-news__text') }}>
-                {{ content.body }}
-            </div>
+		<h2{{title_attributes.addClass('r-news__title')}}>
+			{{ label }}
+		</h2>
+		<div class="r-news__content">
 
-            <div class="r-news__images">
-                {{ content.field_news_img }}
+			<div{{content_attributes.addClass('r-news__text')}}>
+				{{ content.body }}
+			</div>
 
-                {# <img class="r-news__image" src="{{ file_url(content.field_news_img['#items'].entity.uri.value) }}" alt=""> #}
-            </div>
+			<div class="r-news__images">
+				{{ content.field_news_img }}
 
-        </div>
+				{# <img class="r-news__image" src="{{ file_url(content.field_news_img['#items'].entity.uri.value) }}" alt=""> #}
 
-    </div>
+			</div>
+
+		</div>
+
+	</div>
 
 </article>
