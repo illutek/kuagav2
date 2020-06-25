@@ -2,6 +2,7 @@
 /**
  * @file
  * Theme override to display a node.
+ *
  * 
  */
 #}
@@ -22,14 +23,11 @@
     <h3{{ title_attributes }}>
       {{ label }}
     </h3>
-    <div class="">
-        {{ content.field_nicekeepsake_img }}
-    </div>
+  
+ {{ content.field_image }}
 
-  <div{{ content_attributes }}>
+  <div{{ content_attributes.addClass('node__content') }}>
     {{ content.body }}
   </div>
-
-  
 
 </article>
