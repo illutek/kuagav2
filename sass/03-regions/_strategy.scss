@@ -32,8 +32,8 @@
     transition: 0.3s;
 
     &:hover {
-      @include card-shadow--hover(accent);
-      transform: scale(1.01);
+      // @include card-shadow--hover(accent);
+      // transform: scale(1.01);
     }
 
     @include mq(tablet) {
