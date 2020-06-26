@@ -11,13 +11,24 @@
     padding: 0;
   }
 
-  &__top {
+  &__top-inner {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
   }
 
+  &__top {    
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: map-get($colors, accent);
+    height: 4rem;
+    z-index: 990;
+  }
+
   &__primary {
+    margin-top: $margin-b;
     @include mq(tablet) {
       display: flex;
       justify-content: space-around;

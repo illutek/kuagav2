@@ -9,17 +9,22 @@
 
 <header class="r-header">
     <div class="container">
+
       <div class="r-header__top">
-        <div class="c-hamburger-btn">
-          <span class="c-hamburger-btn--open">&nbsp;</span>
-          <span class="c-hamburger-btn__label"> Menu</span>
-        </div>
-        <div class="c-contact-btn js-open-contact">
-          <img src="{{ base_path ~ directory }}/dist/images/contact-btn.png" alt="" />
+        <div class="container">
+          <div class="r-header__top-inner">
+            <div class="c-hamburger-btn">
+              <span class="c-hamburger-btn--open">&nbsp;</span>
+              <span class="c-hamburger-btn__label"> Menu</span>
+            </div>
+            <div class="c-contact-btn js-open-contact">
+              <img src="{{ base_path ~ directory }}/dist/images/contact-btn.png" alt="" />
+            </div>
+          </div>
         </div>
       </div>
-      <div class="r-header__primary">
 
+      <div class="r-header__primary">
         <a class="r-header__logo-link" href="{{ path('<front>') }}">
           <img class="r-header__logo" src="{{ base_path ~ directory }}/dist/images/logo.png" alt="Logo Kuaga" />
         </a>
