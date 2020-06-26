@@ -72,7 +72,7 @@
 #}
 {%
   set classes = [
-    'r-nice-keepsake',
+    'n-nice-keepsake',
     'node',
     'node--type-' ~ node.bundle|clean_class,
     node.isPromoted() ? 'node--promoted',
@@ -90,11 +90,11 @@
     </h2>
 
 
-  <div{{ content_attributes.addClass('r-nice-keepsake__text') }}>
+  <div{{ content_attributes.addClass('n-nice-keepsake__body') }}>
     {{ content.body }}
   </div>
 
-  <div class="r-nice-keepsake__images">
+  <div class="n-nice-keepsake__images">
     {{ content.field_nicekeepsake_img }}
   </div>
 

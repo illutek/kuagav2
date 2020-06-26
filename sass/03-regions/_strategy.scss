@@ -58,4 +58,31 @@
       color: map-get($colors, accent-two);
     }
   }
+
+  // views-view--strategy_page.html.twig
+  &__page-inner {
+    margin-bottom: $margin-bb;
+    display: flex;
+    flex-direction: column;
+
+    @include mq(tablet) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+   // views-view-unformatted--strategy_page.html.twig
+  &__page-panel {
+    // border: map-get($colors, accent) 1px solid;
+
+    @include mq(tablet) {
+      margin: 1%;
+      padding: 2rem;
+      width: 48%;
+      border: map-get($colors, accent) 1px solid;
+    }
+    
+
+  }
+
 }

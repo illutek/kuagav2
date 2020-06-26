@@ -1,0 +1,31 @@
+// /////////////////////////
+// @@ NICE-KEEPSAKE NODE
+// ////////////////////////
+
+.n-nice-keepsake {
+	padding: $default-padding;
+	margin-bottom: $margin-bb;
+	border: 2px solid map-get($colors, accent);
+	text-align: center;
+
+	&__body {
+		margin-bottom: $margin-b;
+	}
+
+	&__images {
+		margin-bottom: $margin-b;
+		display: flex;
+		justify-content: center;
+		img {
+			max-width: 26rem;
+			height: auto;
+		}
+	}
+
+	&__btn {
+  }
+  
+  &__full {
+    margin-bottom: $margin-bb;
+  }
+}

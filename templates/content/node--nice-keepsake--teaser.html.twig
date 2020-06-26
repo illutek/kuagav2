@@ -5,6 +5,11 @@
  * on the home-page in the region strategy
  */
 #}
+
+{% set bodytext = content.body|render|striptags %}
+{# Text lenght variable #}
+{% set textlenght = 250 %}
+
 {%
   set classes = [
     'node',
@@ -23,7 +28,7 @@
     </h3>
 
   <div{{ content_attributes.addClass('node__content') }}>
-    {{ content.body }}
+    {{ bodytext|length > textlenght ? bodytext|slice(0, textlenght) ~ '...' : bodytext }}
   </div>
 
   {# href="{{ url }}" #}

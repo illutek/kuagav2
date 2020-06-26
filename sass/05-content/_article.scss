@@ -1,0 +1,19 @@
+// /////////////////////////
+// @@ ARTICLE NODE
+// ////////////////////////
+
+// this can be for the teaser, full-node and default display
+
+.n-article {
+
+  &__full {
+    margin-bottom: $margin-bb;
+  }
+
+  &__img {
+    margin-bottom: $margin-b;
+  }
+
+  &__body {}
+
+}

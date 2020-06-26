@@ -8,6 +8,7 @@
 #}
 {%
   set classes = [
+    'n-cremation__full',
     'node',
     'node--type-' ~ node.bundle|clean_class,
     node.isPromoted() ? 'node--promoted',
@@ -17,16 +18,26 @@
   ]
 %}
 {{ attach_library('classy/node') }}
-<article{{ attributes.addClass(classes) }}>
+<article{{attributes.addClass(classes)}}>
 
-    <h3{{ title_attributes }}>
-      {{ label }}
-    </h3>
- 
- {{ content.field_crematie_img }}
+	<h3{{title_attributes.addClass('heading-three r-strategy__title--accent-two')}}>
+		{{ label }}
+	</h3>
 
-  <div{{ content_attributes.addClass('node__content') }}>
-    {{ content.body }}
+	<div class="n-cremation__img">
+		{{ content.field_crematie_img }}
+	</div>
+
+	<div{{content_attributes.addClass('n-cremation__body')}}>
+		{{ content.body }}
+    <a href="#">Prijzen crematies</a>
+	</div>
+
+  <div class="n-cremation__file">
+    {# {{ content.field_crematie_file }} #}
+    {% if content.field_crematie_file[0] is not empty %}
+      <a class="n-cremation__link" href=" {{ file_url(content.field_crematie_file['#items'].entity.uri.value) }}">Crematieformulier voor dierenartsen</a>
+    {% endif %}
   </div>
 
 

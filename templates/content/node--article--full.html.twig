@@ -3,11 +3,12 @@
  * @file
  * Theme override to display a node.
  *
- * 
+ * on the view page Strategy (ons aanbod)
  */
 #}
 {%
   set classes = [
+    'n-article__full',
     'node',
     'node--type-' ~ node.bundle|clean_class,
     node.isPromoted() ? 'node--promoted',
@@ -20,13 +21,17 @@
 <article{{ attributes.addClass(classes) }}>
 
   
-    <h3{{ title_attributes }}>
+    <h3{{ title_attributes.addClass('heading-three r-strategy__title--accent-two') }}>
       {{ label }}
     </h3>
-  
- {{ content.field_image }}
 
-  <div{{ content_attributes.addClass('node__content') }}>
+    <div class="n-article__img">
+      {{ content.field_image }}
+    </div>
+  
+ 
+
+  <div{{ content_attributes.addClass('n-article__body') }}>
     {{ content.body }}
   </div>
 

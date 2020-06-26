@@ -7,6 +7,7 @@
 #}
 {%
   set classes = [
+    'n-nice-keepsake__full',
     'node',
     'node--type-' ~ node.bundle|clean_class,
     node.isPromoted() ? 'node--promoted',
@@ -19,14 +20,14 @@
 <article{{ attributes.addClass(classes) }}>
 
   
-    <h3{{ title_attributes }}>
+    <h3{{ title_attributes.addClass('heading-three r-strategy__title--accent-two') }}>
       {{ label }}
     </h3>
-    <div class="">
+    <div class="n-nice-keepsake__images">
         {{ content.field_nicekeepsake_img }}
     </div>
 
-  <div{{ content_attributes }}>
+  <div{{ content_attributes.addClass('n-nice-keepsake__body') }}>
     {{ content.body }}
   </div>
 

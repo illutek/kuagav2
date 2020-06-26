@@ -1,0 +1,40 @@
+// /////////////////////////
+// @@ CREMATION NODE
+// ////////////////////////
+
+// this can be for the teaser, full-node and default display
+
+.n-cremation {
+	&__full {
+		margin-bottom: $margin-bb;
+	}
+
+	&__img {
+		margin-bottom: $margin-b;
+	}
+
+	&__body {
+    margin-bottom: $margin-b;
+
+    & a {
+      color:map-get($colors, accent-two);
+    }
+	}
+
+	&__file {
+	}
+
+	&__link {
+		color: map-get($colors, accent-two);
+
+		&::before {
+			content: "";
+			display: block;
+			background: url("../images/PDF_file_icon.png") no-repeat;
+			width: 20px;
+			height: 20px;
+			float: left;
+			margin: 0 6px 0 0;
+		}
+	}
+}
