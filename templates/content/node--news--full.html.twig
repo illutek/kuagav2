@@ -97,7 +97,8 @@
 
 			<div class="r-news__images">
 				{{ content.field_news_img }}
-
+				{# {% set imgLength  = content.field_news_img['#items'].getValue() | length %} #}
+				{# {{ imgLength }} #}
 				{# <img class="r-news__image" src="{{ file_url(content.field_news_img['#items'].entity.uri.value) }}" alt=""> #}
 
 			</div>
