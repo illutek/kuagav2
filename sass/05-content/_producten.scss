@@ -1,0 +1,51 @@
+// /////////////////////////
+// @@ NODE PRODUCTEN
+// ////////////////////////
+
+.n-producten {
+
+  &__content {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+  }
+
+  &__img {
+    background-color: map-get($colors, white);
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    background-color: map-get($colors, white);
+    align-items: center;
+    margin-top: 1.4rem;
+    padding: 2rem 0;
+  }
+
+  &__type {
+    font: {
+      weight: $fw-bold;
+      size: 2rem;
+    }
+  }
+
+  &__prize, &__volume {
+    display: flex;
+
+    label {
+      margin-right: .5rem;
+    }
+  }
+
+  &__volume {
+    line-height: 3.5rem;
+  }
+
+  &__prize {
+    font: {
+      weight: $fw-bold;
+    };
+  }
+}

@@ -1,0 +1,22 @@
+// /////////////////////////
+// @@ REGIONPRODUCTEN
+// ////////////////////////
+
+// views-view--producten.html.twig
+
+
+
+// views-view-unformatted--producten.html.twig
+
+.r-producten {
+
+  display: flex;
+  margin-bottom: $margin-bb;
+
+  &__item {
+
+    width: 20%;
+    margin: 1%;
+  }
+
+}

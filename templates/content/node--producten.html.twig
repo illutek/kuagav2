@@ -1,0 +1,38 @@
+{#
+/**
+ * @file
+ *
+ *
+ */
+#}
+{%
+  set classes = [
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  ]
+%}
+{{ attach_library('classy/node') }}
+<article{{attributes.addClass(classes)}}>
+
+	<div{{content_attributes.addClass('n-producten__content node__content')}}>
+		<div class="n-producten__img">
+			{{ content.field_product_img }}
+		</div>
+		<div class="n-producten__info">
+			<div class="n-producten__type">
+				{{ label }}
+			</div>
+			<div class="n-producten__volume">
+				<label>Inhoud:</label>  {{ content.field_product_content }}
+			</div>
+			<div class="n-producten__prize">
+				<label>Prijs:</label>  {{ content.field_prijs }}
+			</div>
+		</div>
+	</div>
+
+</article>
