@@ -1,5 +1,5 @@
 // /////////////////////////
-// @@ REGIONPRODUCTEN
+// @@ REGION PRODUCTS
 // ////////////////////////
 
 // views-view--producten.html.twig
@@ -11,12 +11,23 @@
 .r-producten {
 
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   margin-bottom: $margin-bb;
 
-  &__item {
+  @include mq(tablet) {
+    flex-direction: row;
+    align-items: center;
+  }
 
-    width: 20%;
-    margin: 1%;
+  &__item {
+    margin-bottom: $margin-bb;
+
+    @include mq(tablet) {
+      width: 23%;
+      margin: 1%;
+    }
+    
   }
 
 }
