@@ -27,7 +27,11 @@
 				{{ label }}
 			</div>
 			<div class="n-producten__volume">
+			{% if not node.field_product_content.isempty %}
 				<label>Inhoud:</label>  {{ content.field_product_content }}
+			{% else %}
+				<label>{{ "" }}</label>
+			{% endif %}
 			</div>
 			<div class="n-producten__prize">
 				<label>Prijs:</label>  {{ content.field_prijs }}
