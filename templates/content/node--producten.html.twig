@@ -7,6 +7,7 @@
 #}
 {%
   set classes = [
+	'n-producten',
     'node',
     'node--type-' ~ node.bundle|clean_class,
     node.isPromoted() ? 'node--promoted',
@@ -24,7 +25,15 @@
 		</div>
 		<div class="n-producten__info">
 			<div class="n-producten__type">
-				{{ label }}
+
+				{# is_author with hook_preprocess_HOOK() #}
+                {# {% if is_author %} #}
+
+				{% if user.hasPermission('administer nodes') %}
+					<a href="{{ url }}" rel="bookmark">{{ label }}</a>
+				{% else %}
+					{{ label }}
+				{% endif %}
 			</div>
 			<div class="n-producten__volume">
 			{% if not node.field_product_content.isempty %}
