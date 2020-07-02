@@ -4,20 +4,17 @@
 
 // views-view--producten.html.twig
 
-
-
-// views-view-unformatted--producten.html.twig
-
 .r-producten {
-
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  
 
   @include mq(tablet) {
+    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
   }
+
+  // views-view-unformatted--producten.html.twig
 
   &__item {
     margin-bottom: $margin-bb;

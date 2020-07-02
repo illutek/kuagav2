@@ -3,18 +3,12 @@
 // ////////////////////////
 
 .n-producten {
-  margin-bottom: $margin-bb;
 
   &__content {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
+    margin-bottom: $margin-bb;
   }
 
-  &__img {
-    background-color: map-get($colors, white);
-  }
+  &__img {}
 
   &__info {
     display: flex;
@@ -48,5 +42,11 @@
     font: {
       weight: $fw-bold;
     };
+  }
+
+  // 
+
+  &__full {
+    max-width: 50rem;
   }
 }

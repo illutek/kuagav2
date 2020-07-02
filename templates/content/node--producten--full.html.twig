@@ -7,7 +7,7 @@
 #}
 {%
   set classes = [
-	'n-producten',
+	  'n-producten__full',
     'node',
     'node--type-' ~ node.bundle|clean_class,
     node.isPromoted() ? 'node--promoted',
@@ -19,31 +19,25 @@
 {{ attach_library('classy/node') }}
 <article{{attributes.addClass(classes)}}>
 
-	<div{{content_attributes.addClass('n-producten__content node__content')}}>
+	<div{{content_attributes.addClass('n-producten__contentnode__content')}}>
 		<div class="n-producten__img">
 			{{ content.field_product_img }}
 		</div>
 		<div class="n-producten__info">
 			<div class="n-producten__type">
-
-				{# is_author with hook_preprocess_HOOK() #}
-                {# {% if is_author %} #}
-
-				{% if user.hasPermission('administer nodes') %}
-					<a href="{{ url }}/edit" rel="bookmark">{{ label }}</a>
-				{% else %}
-					{{ label }}
-				{% endif %}
+				{{ label }}
 			</div>
 			<div class="n-producten__volume">
-			{% if not node.field_product_content.isempty %}
-				<label>Inhoud:</label>  {{ content.field_product_content }}
-			{% else %}
-				<label>{{ "" }}</label>
-			{% endif %}
+				{% if not node.field_product_content.isempty %}
+					<label>Inhoud:</label>
+					{{ content.field_product_content }}
+				{% else %}
+					<label>{{ "" }}</label>
+				{% endif %}
 			</div>
 			<div class="n-producten__prize">
-				<label>Prijs:</label>  {{ content.field_prijs }}
+				<label>Prijs:</label>
+				{{ content.field_prijs }}
 			</div>
 		</div>
 	</div>
