@@ -1,0 +1,25 @@
+// /////////////////////////
+// @@ CONTENT EDIT
+// ////////////////////////
+
+// content edit form overrides mainly for Farwell form
+
+.node-farwell-form {
+  margin-bottom: $margin-bb;
+
+  .image-preview {
+    width: 25rem;
+    margin-bottom: $margin-b;
+  }
+
+  .text-full {
+    padding: 1rem;
+  }
+
+  .button {
+    padding: 1rem 1.5rem;
+    background-color: map-get($colors, accent-two);
+    border: none;
+    color: map-get($colors, white);
+  }
+}
