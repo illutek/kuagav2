@@ -1,0 +1,40 @@
+// //////////////////////////////
+// @@ FARWELL NODE
+// //////////////////////////////
+
+// views-view--farwell_page.html.twig
+
+.farwell-page {
+  
+}
+
+
+// views-view-unformatted--farwell_page.html.twig
+
+.farwell-row {
+  margin-bottom: $margin-bb;
+
+}
+
+
+// node--farwell.html.twig
+
+.n-farwell {
+  background-color: map-get($colors, white);
+  padding: 2rem 3rem;
+
+  &__content {
+
+  }
+
+  &__image {
+
+    margin-bottom: $margin-b;
+
+  }
+
+  &__body {
+
+  }
+
+}
