@@ -1,0 +1,23 @@
+// //////////////////////////////
+// @@ COMPONENT PAGER
+// //////////////////////////////
+
+.pager {
+	margin-bottom: $margin-b;
+
+	&__item {
+		font: {
+			size: 1.6rem;
+		}
+
+		& a {
+			color: map-get($colors, accent-two);
+      text-decoration: none;
+      
+      &:hover {
+        color: rgba(map-get($colors, accent-two), .8);
+      }
+    }
+		
+	}
+}

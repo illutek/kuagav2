@@ -5,6 +5,7 @@
 // views-view--farwell_page.html.twig
 
 .farwell-page {
+  margin-bottom: $margin-bb;
 
   @include mq(tablet) {
     display: flex;
