@@ -5,6 +5,11 @@
 // views-view--farwell_page.html.twig
 
 .farwell-page {
+
+  @include mq(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
   
 }
 
@@ -13,6 +18,12 @@
 
 .farwell-row {
   margin-bottom: $margin-bb;
+  background-color: map-get($colors, white);
+
+  @include mq(tablet) {
+    width: 46%;
+    margin: 2%;
+  }
 
 }
 
@@ -20,16 +31,26 @@
 // node--farwell.html.twig
 
 .n-farwell {
-  background-color: map-get($colors, white);
+  
   padding: 2rem 3rem;
 
   &__content {
 
+    @include mq('desktop') {
+      
+    }
+     
   }
 
   &__image {
 
     margin-bottom: $margin-b;
+
+    @include mq('desktop') {
+      float: left;
+      width: 35%;
+      margin-right: 8%;
+    }
 
   }
 
