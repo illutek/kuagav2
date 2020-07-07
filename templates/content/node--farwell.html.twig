@@ -20,16 +20,22 @@
 {{ attach_library('classy/node') }}
 <article{{attributes.addClass(classes)}}>
 
-	<div{{content_attributes.addClass('node__content n-farwell__content')}}>
-    <h3{{title_attributes.addClass('heading-two')}}>
-		  {{ label }}
+	<div{{content_attributes.addClass('node__contentn-farwell__content')}}>
+
+		<h3{{title_attributes.addClass('heading-two')}}>
+			{{ label }}
 		</h3>
-    <div class="n-farwell__image">
-      {{ content.field_farwell_img.0 }}
-    </div>
-    <div class="n-farwell__body">
-		  {{ content.field_farwell_body }}
-    </div>
+
+		{% if content.field_farwell_img|render is not empty %}
+			<div class="n-farwell__image">
+				{{ content.field_farwell_img }}
+			</div>
+		{% endif %}
+
+		<div class="n-farwell__body">
+			{{ content.field_farwell_body }}
+		</div>
+
 	</div>
 
 </article>
