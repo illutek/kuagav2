@@ -76,3 +76,8 @@
     }
   }
 }
+
+// this ensures that the admin toolbar is not hidden by the site menu bar
+.toolbar-tray-open .r-header__top {
+  top: 8rem;
+}
