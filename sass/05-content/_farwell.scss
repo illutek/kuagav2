@@ -18,12 +18,12 @@
 // views-view-unformatted--farwell_page.html.twig
 
 .farwell-row {
-  margin-bottom: $margin-bb;
+  margin-bottom: $margin-b;
   background-color: map-get($colors, white);
 
   @include mq(tablet) {
-    width: 46%;
-    margin: 2%;
+    width: 48%;
+    margin-right: 2%;
   }
 
 }
@@ -55,8 +55,38 @@
 
   }
 
-  &__body {
+  &__body {}
+
+   // block--ingedachtentoevoegen.html.twig
+   &__add-content {
+    font-size: 1.8rem;
+    margin-bottom: $margin-b;
+  }
+
+  // this on the block 
+  &__add-link {
+    text-decoration: none;
+    color: map-get($colors , accent-two);
+
+    &:hover {
+      color: rgba(map-get($colors, accent-two), .8);
+    }
 
   }
 
 }
+
+// farwell form
+
+#edit-field-farwell-img-0--description {
+  display: none;
+}
+
+#edit-field-farwell-img-wrapper {
+  margin: 1.5rem 0;
+}
+
+#edit-field-farwell-img-0-upload {
+  padding: 1.5rem 0;
+}
+
