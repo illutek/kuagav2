@@ -12,15 +12,5 @@
     margin-bottom: $margin-b;
   }
 
-  .text-full {
-    padding: 1rem;
-    width: 100%;
-  }
-
-  .button {
-    padding: 1rem 1.5rem;
-    background-color: map-get($colors, accent-two);
-    border: none;
-    color: map-get($colors, white);
-  }
+ 
 }

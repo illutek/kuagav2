@@ -1,0 +1,35 @@
+// /////////////////////////
+// @@ CONTENT EDIT
+// ////////////////////////
+
+// default classes for form elements
+
+.input {
+
+  width: 100%;
+  padding: 1rem;
+
+  &__text {
+
+  }
+
+  &__textarea {
+
+  }
+
+
+}
+
+ .button {
+  padding: 1rem 1.5rem;
+  background-color: map-get($colors, accent-two);
+  border: none;
+  color: map-get($colors, white);
+  width: 45%;
+}
+
+// to hide the preview btn https://www.drupal.org/project/drupal/issues/2960353
+#edit-preview {
+  display: none;
+}
+
