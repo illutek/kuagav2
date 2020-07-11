@@ -6,7 +6,7 @@
 
 .n-cremation {
 	&__full {
-		margin-bottom: $margin-bb;
+		// margin-bottom: $margin-bb;
 	}
 
 	&__img {
@@ -22,6 +22,19 @@
 	}
 
 	&__file {
+	}
+
+	&__file-item {
+
+		&:not(:last-child) {
+			margin-bottom: 1rem;
+		}
+
+		& a {
+			// text-decoration: none;
+			color: map-get($colors, accent-two);
+		}
+
 	}
 
 	&__link {

@@ -61,6 +61,16 @@ li {
 
 table {
 	width: 100%;
+	border-collapse: collapse;
+}
+
+table, th, td {
+	border: 1px solid map-get($colors, accent-two);
+}
+
+th, td {
+  padding: 1rem;
+  
 }
 
 strong {

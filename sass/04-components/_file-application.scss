@@ -1,0 +1,14 @@
+// /////////////////////////
+// @@ FILE APPLICATION
+// ////////////////////////
+
+// Drupal file application overrides
+
+.file {
+
+  padding-left: 2.5rem;
+
+	&--application-pdf {
+		background-image: url(../images/PDF_file_icon.png);
+	}
+}

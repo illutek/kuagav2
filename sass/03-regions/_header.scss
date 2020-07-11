@@ -78,6 +78,12 @@
 }
 
 // this ensures that the admin toolbar is not hidden by the site menu bar
+.toolbar-horizontal .r-header__top {
+  top: 4rem;
+}
+
 .toolbar-tray-open .r-header__top {
   top: 8rem;
 }
+
+
