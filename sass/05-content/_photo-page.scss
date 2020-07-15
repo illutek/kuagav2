@@ -1,0 +1,49 @@
+// //////////////////////////////
+// @@ PAGE NODE
+// //////////////////////////////
+
+.n-photo-page {
+  &__content {
+  }
+
+  &__img {
+  }
+
+  &__body {
+    margin-bottom: $margin-b;
+  }
+
+  // field-field-photopage-img.html.twig
+  &__img-fields {
+    @include mq(tablet) {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+      grid-gap: 1rem;
+      grid-auto-rows: 25rem 20rem 25rem;
+      grid-auto-flow: dense;
+    }
+  }
+
+  &__img-field {
+    margin-bottom: $margin-b;
+
+    @include mq(tablet) {
+      &:first-child {
+        grid-area: 1 / 1 / span 2 / span 2;
+      }
+
+      &:nth-child(3n) {
+        grid-column: span 2;
+      }
+
+      &:nth-child(5n) {
+        grid-row: span 2;
+      }
+    }
+
+    img {
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+}
