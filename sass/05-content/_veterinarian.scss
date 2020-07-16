@@ -1,0 +1,14 @@
+// //////////////////////////////
+// @@ VETERINARIAN NODE
+// //////////////////////////////
+
+.n-veterinarian {
+
+    &__content {
+
+        a {
+            color: map-get($colors, white);
+            text-decoration: none;
+        }
+    }
+}

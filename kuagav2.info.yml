@@ -12,6 +12,7 @@ libraries:
 
 regions:
   nav: Navigation
+  nav_veterinarian_file: "Menu Veterinarian file"
   headeropening: "Header openings-hours"
   news: News
   firstintro: "First Intro"
@@ -23,3 +24,4 @@ regions:
   footerbrochure: "Footer Brochure"
   footeropening: "Footer openings-hours"
   footerpartners: "Footer partners"
+  footer_veterinarian_file: "Footer Veterinarian file"
