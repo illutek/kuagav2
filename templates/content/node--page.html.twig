@@ -82,15 +82,17 @@
   ]
 %}
 {{ attach_library('classy/node') }}
-<article{{ attributes.addClass(classes) }}>
+<article{{attributes.addClass(classes)}}>
 
-  <div{{ content_attributes.addClass('n-page__content') }}>
-    <div class="n-page__img">
-      {{ content.field_page_img}}
-    </div>
-    <div class="n-page__body">
-      {{ content.body }}
-    </div>
-  </div>
+	<div{{content_attributes.addClass('n-page__content')}}>
+		{% if content.field_page_img|render is not empty %}
+			<div class="n-page__img">
+				{{ content.field_page_img }}
+			</div>
+		{% endif %}
+		<div class="n-page__body">
+			{{ content.body }}
+		</div>
+	</div>
 
 </article>
