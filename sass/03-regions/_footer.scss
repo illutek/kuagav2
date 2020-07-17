@@ -55,8 +55,9 @@
 	}
 
 	&__partners {
-		&-inner {
-		}
+		margin-bottom: $margin-b;
+
+		&-inner {}
 
 		&-item {
 			&:not(:last-child) {

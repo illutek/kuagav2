@@ -30,15 +30,16 @@
 
 	<div{{content_attributes.addClass('n-cremation__body')}}>
 		{{ content.body }}
-    {# <a href="#">Prijzen crematies</a> #}
+		{# <a href="#">Prijzen crematies</a> #}
 	</div>
 
-  <div class="n-cremation__file">
-    {{ content.field_crematie_file }}
-    {# {% if content.field_crematie_file[0] is not empty %}
-      <a class="n-cremation__link" href=" {{ file_url(content.field_crematie_file['#items'].entity.uri.value) }}">Crematieformulier voor dierenartsen</a>
-    {% endif %} #}
-  </div>
-
+	{% if content.field_crematie_file|render is not empty %}
+		<div class="n-cremation__file">
+			{{ content.field_crematie_file }}
+			{# {% if content.field_crematie_file[0] is not empty %}
+			      <a class="n-cremation__link" href=" {{ file_url(content.field_crematie_file['#items'].entity.uri.value) }}">Crematieformulier voor dierenartsen</a>
+			    {% endif %} #}
+		</div>
+	{% endif %}
 
 </article>
