@@ -1,0 +1,17 @@
+// //////////////////////////////
+// @@ VETERINARIAN NODE
+// //////////////////////////////
+
+.n-veterinarian {
+
+  &__content {
+    display: inline-block;
+    padding: 1rem;
+    border: solid 1px map-get($colors, white);
+    
+    a {
+      color: map-get($colors, white);
+      text-decoration: none;
+    }
+  }
+}

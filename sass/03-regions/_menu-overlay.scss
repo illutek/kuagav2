@@ -9,7 +9,7 @@
   @include bcg-overlay(map-get($colors, accent-two), map-get($colors, white));
 
   @include mq(tablet) {
-    width: 50%;
+    width: 80vw;
   }
   
   &__top {
@@ -26,26 +26,37 @@
 
   &__list {
     display: flex;
-
+    margin-bottom: $margin-b;
   }
 
   &__items {
       list-style-type: none;
+
+      @include mq(desktop) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        
+      }
   }
 
   &__item {
     font: {
-      size: 3rem;
+      size: 2.7rem;
       weight: $fw-bold;
     }
-    text-transform: uppercase;
     margin-left: 0;
-    
+    justify-self: center;
   }
 
   &__link {
     text-decoration: none;
     color: map-get($colors, bcg-clr);
+  }
+
+  &__bottom {
+    text-align: right;
+    margin-bottom: $margin-b;
   }
 
   &--visible {

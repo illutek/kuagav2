@@ -73,7 +73,9 @@
 
    // views-view-unformatted--strategy_page.html.twig
   &__page-panel {
-    // border: map-get($colors, accent) 1px solid;
+    border: map-get($colors, accent) 1px solid;
+    padding: 1rem;
+    margin-bottom: $margin-b;
 
     @include mq(tablet) {
       margin: 1%;

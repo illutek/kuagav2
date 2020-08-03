@@ -12,19 +12,31 @@
 		<div
 			class="r-footer__inner">
 
-			{# brochure #}
-			<div class="r-footer__brochure">
-
-				{{ page.footerbrochure }}
-
+			{# brochure and veterinarian_file#}
+			<div class="r-footer__wrap-brochure-veterinarian">
+				<div class="r-footer__brochure">
+					{{ page.footerbrochure }}
+				</div>
+				<div class="r-footer__veterinarian_file">
+					{{ page.footer_veterinarian_file }}
+				</div>
 			</div>
-      {# end brochure #}
+			{# end brochure and veterinarian_file #}
 
 			{# opening-hours #}
 			<div class="r-footer__opening-hours">
 				{{ page.footeropening }}
 			</div>
-      {# end opening-hours #}
+			{# end opening-hours #}
+
+			{# partners #}
+			<div class="r-footer__partners">
+				<h3 class="heading-three">Partners</h3>
+				<div class="r-footer__partners-inner">
+					{{ page.footerpartners }}
+				</div>
+			</div>
+			{# end partners #}
 
 			{# contact #}
 			<div class="r-footer__contact">
@@ -36,22 +48,15 @@
 					<a href="https://www.facebook.com/uitvaartzorgkuaga/"><img src="{{ base_path ~ directory }}/dist/images/facebook-icon.jpg" alt=""></a>
 				</div>
 			</div>
-      {# end contact #}
-
-			{# partners #}
-			<div class="r-footer__partners">
-				<h3 class="heading-three">Partners</h3>
-				<div class="r-footer__partners-inner">
-				  {{ page.footerpartners }}
-				</div>
-			</div>
-      {# end partners #}
+			{# end contact #}
 
 		</div>
 		{# end r-footer__inner #}
 
 		<div class="r-footer__copy">
-			<p>© {{ "now"|date("Y") }} Kuaga dierencrematorium -
+			<p>©
+				{{ "now"|date("Y") }}
+				Kuaga dierencrematorium -
 				<br>
 				Maatheide 74/G 3920 Lommel -
 				<a href="#">Privacy Policy</a>
