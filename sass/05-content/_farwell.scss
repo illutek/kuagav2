@@ -55,7 +55,11 @@
 
   }
 
-  &__body {}
+  &__name {
+    margin-bottom: 2rem;
+    color: map-get($colors, accent-two);
+    font-size: $ff-size + .4rem;
+  }
 
    // block--ingedachtentoevoegen.html.twig
    &__add-content {

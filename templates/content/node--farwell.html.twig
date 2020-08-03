@@ -20,7 +20,7 @@
 {{ attach_library('classy/node') }}
 <article{{attributes.addClass(classes)}}>
 
-	<div{{content_attributes.addClass('node__contentn-farwell__content')}}>
+	<div{{content_attributes.addClass('node__content n-farwell__content')}}>
 
 		<h3{{title_attributes.addClass('heading-two')}}>
 			{{ label }}
@@ -33,6 +33,11 @@
 		{% endif %}
 
 		<div class="n-farwell__body">
+		
+		  <div class="n-farwell__name">
+		    {{ content.field_farwell_name }}
+		  </div>
+		  
 			{{ content.field_farwell_body }}
 		</div>
 

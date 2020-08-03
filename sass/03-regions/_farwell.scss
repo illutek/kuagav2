@@ -48,7 +48,16 @@
 
   &__title {
     text-transform: uppercase;
-    font-size: $ff-size + 0.4rem;
+    font: {
+      family: $ff-titles;
+      size: $ff-size + 2.5rem;
+    };
     margin-bottom: $margin-b;
+    color: map-get($colors, white);
+  }
+
+  &__name {
+    margin-bottom: 2rem;
+    font-size: $ff-size + .4rem;
   }
 }
