@@ -7,7 +7,8 @@ version: 1.0.0
 
 libraries:
   - kuagav2/globalstyle
-  - kuagav2/fonts
+  - kuagav2/opensans
+  - kuagav2/italianno
   - kuagav2/java
 
 regions:

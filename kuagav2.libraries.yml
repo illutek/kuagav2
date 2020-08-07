@@ -3,14 +3,15 @@ globalstyle:
     theme:
       css/styles.css: {}
 
-fonts:
-  license:
-    name: SIL Open Font License 1.1
-    url: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi$id=OFL
+opensans:
   css:
-    theme:
+    base:
+      '//fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600': { type: external, minified: true }
+
+italianno:
+  css:
+    base:
       '//fonts.googleapis.com/css2?family=Italianno': { type: external, minified: true }
-      '//fonts.googleapis.com/css2?family=Open+Sans:300,400,600': { type: external, minified: true }
 
 java:
   js:
