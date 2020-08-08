@@ -35,13 +35,7 @@
   
   padding: 2rem 3rem;
 
-  &__content {
-
-    @include mq('desktop') {
-      
-    }
-     
-  }
+  &__content {}
 
   &__image {
 
