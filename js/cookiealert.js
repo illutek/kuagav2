@@ -6,8 +6,8 @@
 (function () {
     "use strict";
 
-    var cookieAlert = document.querySelector(".cookiealert");
-    var acceptCookies = document.querySelector(".acceptcookies");
+    var cookieAlert = document.querySelector(".cookie__alert");
+    var acceptCookies = document.querySelector(".cookie__accept");
 
     if (!cookieAlert) {
        return;

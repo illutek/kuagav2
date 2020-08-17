@@ -7,24 +7,26 @@
  */
 #}
 
-  {# start r-menu-overlay #}
-	{% include directory ~ '/templates/partials/shared/menu-overlay.html.twig' %}
-	{# r-menu-overlay #}
+{# start r-menu-overlay #}
+  {% include directory ~ '/templates/partials/shared/menu-overlay.html.twig' %}
+{# r-menu-overlay #}
 
-	{# start r-overlay-contact #}
-	{% include directory ~ '/templates/partials/shared/contact-overlay.html.twig' %}
-	{# end r-overlay-contact #}
+{# start r-overlay-contact #}
+  {% include directory ~ '/templates/partials/shared/contact-overlay.html.twig' %}
+{# end r-overlay-contact #}
 
-	{# start header #}
-	{% include directory ~ '/templates/partials/shared/header.html.twig' %}
-	{# end header #}
+{# start header #}
+  {% include directory ~ '/templates/partials/shared/header.html.twig' %}
+{# end header #}
 
   <div class="container">
     {{ page.content }}
   </div>
 
-  {# start region footer #}
-	{% include directory ~ '/templates/partials/shared/footer.html.twig' %}
-	{# end region footer #}
+{# start region footer #}
+  {% include directory ~ '/templates/partials/shared/footer.html.twig' %}
+{# end region footer #}
   
-
+{# start region cookiealert #}
+  {% include directory ~ '/templates/partials/shared/cookiealert.html.twig' %}
+{# end region cookiealert #}
