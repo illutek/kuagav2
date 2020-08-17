@@ -4,6 +4,7 @@
  * Released under MIT license
  */
  .cookie {
+
    &__alert {
   position: fixed;
   bottom: 0;
@@ -23,13 +24,26 @@
     color: map-get($colors, white);
   }
 
+  &.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%);
+    transition-delay: 1000ms;
+  }
+
+  @include mq(tablet) {
+    width: 30rem;
+    left: 2rem;
+    bottom: 2rem;
+    border: 1px solid map-get($colors, white);
+  }
+
  }
 
- &__alert.show {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0%);
-  transition-delay: 1000ms;
+ &__flex {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
  }
 }
 
