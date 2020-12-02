@@ -21,9 +21,11 @@
     }
   }
 
-  &__title {
-
+  &__content-inner {
+    flex: 1;
   }
+
+  &__title {}
 
   &__text {
     margin-bottom: $margin-b;
@@ -36,9 +38,10 @@
   }
 
   &__images {
+    flex: 1;
 
     @include mq(tablet) {
-      width: 35%;
+      // width: 35%;
     }
   }
 
