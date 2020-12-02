@@ -6,42 +6,38 @@
   border: 6px solid map-get($colors, accent-two);
   margin-bottom: $margin-bb;
 
-  &__inner {
-    padding: $default-padding;
-
-  }
 
   &__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: $default-padding;
 
-    @include mq(tablet) {
-      flex-direction: row;
-    }
+    // & img {
+    //   float: left;
+    //   width: 40%;
+    // }
   }
 
-  &__content-inner {
-    flex: 1;
+  &__title {
+    // display: block;
   }
-
-  &__title {}
 
   &__text {
     margin-bottom: $margin-b;
     @include mq(tablet) {
-      margin-bottom: 0;
-      margin-right: 1rem;
-      width: 65%;
+      // margin-bottom: 0;
+      // margin-right: 1rem;
+      // width: 65%;
     }
 
   }
 
   &__images {
-    flex: 1;
+    margin-bottom: $margin-b;
 
     @include mq(tablet) {
-      // width: 35%;
+      float: left;
+      margin-right: $margin-b;
+      margin-bottom: 0;
+      width: 45%;
     }
   }
 
@@ -57,6 +53,4 @@
     }
     
   }
-
-  &__image {}
 }
