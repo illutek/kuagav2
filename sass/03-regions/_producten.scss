@@ -3,15 +3,21 @@
 // ////////////////////////
 
 // views-view--producten.html.twig
+// views-view--ceramic_urns.html.twig
 
 .r-producten {
-  
+  margin-bottom: $margin-bb;
 
   @include mq(tablet) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+  }
+
+  &__view {
+    margin-bottom: $margin-bb;
   }
 
   // views-view-unformatted--producten.html.twig
@@ -20,7 +26,7 @@
     margin-bottom: $margin-bb;
 
     @include mq(tablet) {
-      // width: 15%;
+      max-width: 16.7rem;
       margin: 1%;
     }
     

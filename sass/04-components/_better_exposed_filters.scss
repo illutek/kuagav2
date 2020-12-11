@@ -1,0 +1,50 @@
+// ///////////////////////////////////////
+// @@ COMPONENT BETTER EXPOSED FILTERS
+// ///////////////////////////////////////
+
+.c-better-exposed-filter {
+
+  margin: $margin-b 0;
+  width: 100%;
+
+	& ul {
+		display: flex;
+    justify-content: center;
+    align-items: center;
+		list-style: none;
+
+    &:not(:first-child) {
+      margin-left: 3.5rem;
+    }
+	}
+
+	& li {
+
+    border: 1px solid map-get($colors, white);
+    padding: 1rem 2.5rem;
+    background-color: map-get($colors, accent);
+    margin-left: 0.5rem;
+    float: none;
+
+    &:first-child {
+      margin-left: 0;
+      display: none;
+    }
+
+    &:nth-child(2) {
+      margin-left: 0;
+    }
+
+    
+
+		& a {
+      text-decoration: none;
+      color: map-get($colors, white);
+		}
+	}
+}
+
+
+.bef-exposed-form .form--inline > .form-item {
+  float: none;
+}
