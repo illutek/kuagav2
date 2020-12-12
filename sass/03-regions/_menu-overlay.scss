@@ -7,10 +7,6 @@
   padding: $default-padding;
 
   @include bcg-overlay(map-get($colors, accent-two), map-get($colors, white));
-
-  @include mq(tablet) {
-    width: 80vw;
-  }
   
   &__top {
     display: flex;
@@ -25,7 +21,7 @@
   }
 
   &__list {
-    display: flex;
+    width: 75vw;
     margin-bottom: $margin-b;
   }
 
@@ -42,7 +38,7 @@
 
   &__item {
     font: {
-      size: 2.7rem;
+      size: 2rem;
       weight: $fw-bold;
     }
     margin-left: 0;
@@ -60,7 +56,7 @@
   }
 
   &--visible {
-    opacity: 1;
+    opacity: .98;
     right: 0;
   }
 }
