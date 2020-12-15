@@ -13,6 +13,7 @@ libraries:
 
 regions:
   nav: Navigation
+  productmenu: "Product Menu"
   nav_veterinarian_file: "Menu Veterinarian file"
   headeropening: "Header openings-hours"
   news: News

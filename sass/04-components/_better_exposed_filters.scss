@@ -11,6 +11,7 @@
 		display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 		list-style: none;
 
     &:not(:first-child) {
@@ -24,12 +25,8 @@
     padding: 1rem 2.5rem;
     background-color: map-get($colors, accent);
     margin-left: 0.5rem;
+    margin-bottom: 1rem;
     float: none;
-
-    &:first-child {
-      margin-left: 0;
-      display: none;
-    }
 
     &:nth-child(2) {
       margin-left: 0;

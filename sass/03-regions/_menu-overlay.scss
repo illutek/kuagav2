@@ -22,18 +22,20 @@
 
   &__list {
     width: 75vw;
+    max-width: 90rem;
     margin-bottom: $margin-b;
+
+    @include mq(desktop) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      
+    }
   }
 
   &__items {
       list-style-type: none;
 
-      @include mq(desktop) {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-        
-      }
   }
 
   &__item {
