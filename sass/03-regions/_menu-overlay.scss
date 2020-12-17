@@ -14,6 +14,11 @@
     margin-bottom: $margin-b;
   }
 
+  &__logo {
+    width: 50%;
+    max-width: 23rem;
+  }
+
   &__close {
     width: 5rem;
     height: 5rem;
@@ -32,6 +37,17 @@
       
     }
   }
+
+  &__product-menu {
+    margin-top: $margin-bb;
+
+    @include mq(desktop) {
+      margin-top: 0;
+    }
+  }
+
+  // menu--main.html.twig
+  // menu--producten.html.twig
 
   &__items {
       list-style-type: none;
