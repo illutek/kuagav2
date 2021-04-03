@@ -1,0 +1,57 @@
+{#
+/**
+ * @file
+ * Theme override to display a single Drupal page while offline.
+ *
+ * All available variables are mirrored in page.html.twig.
+ * Some may be blank but they are provided for consistency.
+ *
+ * @see template_preprocess_maintenance_page()
+ */
+#}
+<div class="layout-container r-maintenance">
+
+	<header role="banner">
+
+		<img
+		class="r-header__logo" src="{{ base_path ~ directory }}/dist/images/logo.png" alt="Logo Kuaga"/>
+
+	{# no sitename or site slogan #}
+
+	</header>
+
+	<main role="main">
+		{% if title %}
+			<h1>{{ title }}</h1>
+		{% endif %}
+
+		{{ page.highlighted }}
+
+		{{ page.content }}
+	</main>
+
+	{% if page.sidebar_first %}
+		<aside class="layout-sidebar-first" role="complementary">
+			{{ page.sidebar_first }}
+		</aside>
+		{# /.layout-sidebar-first #}
+	{% endif %}
+
+	{% if page.sidebar_second %}
+		<aside class="layout-sidebar-second" role="complementary">
+			{{ page.sidebar_second }}
+		</aside>
+		{# /.layout-sidebar-second #}
+	{% endif %}
+
+
+	<footer role="contentinfo">
+		<div class="r-maintenance__facebook">
+			<a href="https://www.facebook.com/uitvaartzorgkuaga/"><img src="{{ base_path ~ directory }}/dist/images/facebook-icon.jpg" alt=""></a>
+		</div>
+		{{ page.footer }}
+	</footer>
+
+
+</div>
+{# /.layout-container #}
