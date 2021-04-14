@@ -38,6 +38,10 @@
     }
   }
 
+  &__main-menu {
+    display: grid;
+  }
+
   &__product-menu {
     margin-top: $margin-bb;
 

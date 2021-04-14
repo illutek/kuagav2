@@ -5,7 +5,7 @@
 .r-header {
   padding: 2rem;
   background-color: map-get($colors, accent);
-  margin-bottom: $margin-b;
+  margin-bottom: $margin-bb;
 
   @include mq(tablet) {
     padding: 0;
@@ -35,7 +35,7 @@
       align-items: center;
       position: relative;
       overflow: hidden;
-      padding: $default-padding 0;
+      padding: $double-padding 0;
 
       &::before {
         content: "";
@@ -47,7 +47,7 @@
         height: 100%;
         z-index: 1;
         opacity: 0.25;
-        background-image: url(../images/header-bcg.jpg);
+        background-image: url(../images/kuaga-header-img.jpg);
         background-size: cover;
         background-repeat: no-repeat;
       }
