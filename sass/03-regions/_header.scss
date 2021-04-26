@@ -71,6 +71,10 @@
       margin-bottom: 0;
     }
 
+    td {
+      padding: 0;
+    }
+
     @include mq(tablet) {
       display: block;
     }
