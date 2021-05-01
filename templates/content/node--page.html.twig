@@ -84,12 +84,25 @@
 {{ attach_library('classy/node') }}
 <article{{attributes.addClass(classes)}}>
 
+	{# {{ node.field_page_img.getvalue | length }} #}
+	{# {% if content.field_page_img|render is not empty %} #}
+
 	<div{{content_attributes.addClass('n-page__content')}}>
-		{% if content.field_page_img|render is not empty %}
+
+		{% if node.field_page_img.getvalue | length > 2 %}
+			<div class="n-page__img-flex">
+				{{ content.field_page_img }}
+			</div>
+		
+		{% elseif node.field_page_img.getvalue | length >= 1 %}
 			<div class="n-page__img">
 				{{ content.field_page_img }}
 			</div>
+
+		{% else %}
+		  <div></div>
 		{% endif %}
+
 		<div class="n-page__body">
 			{{ content.body }}
 		</div>
